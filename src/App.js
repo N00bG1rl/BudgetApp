@@ -1,4 +1,5 @@
 import Budget from './components/budget/Budget'
+import NewItem from './components/newBudgetItem/NewItem'
 
 const App = () => {
   const budget = [
@@ -21,7 +22,12 @@ const App = () => {
       cost: 450,
       date: new Date(2021, 5, 12),
     },
-  ];
+  ]
+
+  const addBudgetHandler = budget => {
+    console.log('In App.js')
+    console.log(budget)
+  }
 
   // return React.createElement(
   //   'div',
@@ -32,10 +38,10 @@ const App = () => {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewItem onBudgetAdd={ addBudgetHandler } />
       <Budget items={ budget } />
     </div>
-  );
+  )
 }
 
 export default App
