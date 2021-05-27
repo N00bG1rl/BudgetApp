@@ -9,15 +9,12 @@ const Form = (props) => {
   const handleTitle = (event) => {
     setFormTitle(event.target.value)
   }
-
   const handleCost = (event) => {
     setFormCost(event.target.value)
   }
-
   const handleDate = (event) => {
     setFormDate(event.target.value)
   }
-
   const handleSubmit = (event) => {
     event.preventDefault()
 
