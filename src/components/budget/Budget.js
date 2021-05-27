@@ -8,7 +8,6 @@ import '../../theme/Budget.css'
 
 const Budget = (props) => {
   const [selectedYear, setFilteredYear] = useState('2020')
-
   const handleChange = selectedYear => {
     setFilteredYear(selectedYear)
     console.log(selectedYear)
