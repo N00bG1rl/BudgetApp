@@ -16,27 +16,13 @@ const Budget = (props) => {
     <div>
       <Card className="budget">
         <FilterDate selected={ selectedYear } onChange={ handleChange } />
-
-        <Item
-          title={props.items[0].title}
-          cost={props.items[0].cost}
-          date={props.items[0].date}
-        />
-        <Item
-          title={props.items[0].title}
-          cost={props.items[0].cost}
-          date={props.items[0].date}
-        />
-        <Item
-          title={props.items[0].title}
-          cost={props.items[0].cost}
-          date={props.items[0].date}
-        />
-        <Item
-          title={props.items[0].title}
-          cost={props.items[0].cost}
-          date={props.items[0].date}
-        />
+        {props.items.map(item => (
+          <Item
+            title={item.title}
+            cost={item.cost}
+            date={item.date}
+          />
+        ))}
       </Card>
     </div>
   )
