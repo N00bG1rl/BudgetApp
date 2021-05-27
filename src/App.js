@@ -1,5 +1,5 @@
-import Budget from './components/budget/Budget'
 import NewItem from './components/newBudgetItem/NewItem'
+import Budget from './components/budget/Budget'
 
 const App = () => {
   const budget = [
@@ -24,9 +24,9 @@ const App = () => {
     },
   ]
 
-  const addBudgetHandler = budget => {
+  const handleAdd = addBudget => {
     console.log('In App.js')
-    console.log(budget)
+    console.log(addBudget)
   }
 
   // return React.createElement(
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div>
-      <NewItem onBudgetAdd={ addBudgetHandler } />
+      <NewItem onBudgetAdd={ handleAdd } />
       <Budget items={ budget } />
     </div>
   )
