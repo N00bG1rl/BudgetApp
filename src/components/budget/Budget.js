@@ -15,7 +15,8 @@ const Budget = (props) => {
   return (
     <div>
       <Card className="budget">
-        <FilterDate selected={ selectedYear } onChange={ handleChange }/>
+        <FilterDate selected={ selectedYear } onChange={ handleChange } />
+
         <Item
           title={props.items[0].title}
           cost={props.items[0].cost}

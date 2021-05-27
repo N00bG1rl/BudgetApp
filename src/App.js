@@ -24,9 +24,9 @@ const App = () => {
     },
   ]
 
-  const handleAdd = addBudget => {
+  const handleAdd = budget => {
     console.log('In App.js')
-    console.log(addBudget)
+    console.log(budget)
   }
 
   // return React.createElement(
