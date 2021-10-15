@@ -1,3 +1,17 @@
+# Budget App
+
+I created this to learn React Hooks.
+
+# Created at
+
+May 26, 2021
+
+# Project is created with
+
+* React.js
+
+# #########################################
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
